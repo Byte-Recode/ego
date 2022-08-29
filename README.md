@@ -23,8 +23,8 @@ npm i swiper -s(轮播插件，可选)
 
 
 ### 后台
-1. 基于node.js + Express(公司不用，后台基本是Java)
-2. 启动xampp ---使用mysql(xampp公司不用，学习使用)
+1. 基于node.js + Express
+2. 启动xampp ---使用mysql
 3. 安装依赖:
 ```
 npm i express -s
