@@ -18,7 +18,7 @@ export default {
 	},
 	methods: {
 		change(){
-			this.$emit("changeCollapse");
+			this.$bus.$emit("changeCollapse",this.isCollapse);
 		}
 	}
 }
