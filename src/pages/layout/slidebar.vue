@@ -1,7 +1,8 @@
 <template>
     <!-- collapse	是否水平折叠收起菜单（仅在 mode 为 vertical 时可用） -->
+	<!-- :default-active="$route.path" 动态绑定路由路径，防止刷新路由不变而导航激活的样式回跳 -->
     <el-menu
-        default-active="/"
+        :default-active="$route.path"
         background-color="#545c64"
         text-color="#fff"
         active-text-color="#ffd04b"
