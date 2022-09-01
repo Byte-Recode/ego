@@ -11,6 +11,8 @@ const Params = () =>import('../pages/params/params.vue')
 const OrderList = () =>import('../pages/order/orderList/orderList.vue') 
 const OrderBack = () =>import('../pages/order/orderBack/orderBack.vue') 
 
+const AddGoods = () =>import("../pages/goods/addGoods.vue")
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -28,6 +30,11 @@ const routes = [
 				path: '/goods',
 				name: 'Goods',
 				component: Goods
+			},
+			{
+				path: '/AddGoods',
+				name: 'AddGoods',
+				component: AddGoods
 			},
 			{
 				path: '/order',

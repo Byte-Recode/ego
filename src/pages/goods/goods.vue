@@ -8,7 +8,7 @@
                 size="small"
             ></el-input>
             <el-button type="primary" size="small">查询</el-button>
-            <el-button type="primary" size="small">添加</el-button>
+            <el-button type="primary" size="small" @click="add">添加</el-button>
         </header>
         <!-- 表格区域展示视图数据 -->
         <section>
@@ -72,6 +72,9 @@ export default {
     methods: {
         handleEdit() {},
         handleDelete() {},
+		add(){
+			this.$router.push("/AddGoods")
+		}
     },
 	mounted(){
 		this.$bus.$on("changePage",(page)=>{
